@@ -35,11 +35,11 @@ class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
         // The Surface has been created, acquire the camera and tell it where
         // to draw.
 //        cameraId = findFrontFacingCamera();
-        if (cameraId < 0) {
+//        if (cameraId < 0) {
 //            Toast.makeText(this, "No front facing camera found.", Toast.LENGTH_LONG).show();
-        } else {
+//        } else {
             camera = Camera.open(cameraId);
-        }
+//        }
         try {
             camera.setPreviewDisplay(holder);
 

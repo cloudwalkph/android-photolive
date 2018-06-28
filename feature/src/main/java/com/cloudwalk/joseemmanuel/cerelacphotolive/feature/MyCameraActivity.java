@@ -65,12 +65,15 @@ public class MyCameraActivity extends AppCompatActivity {
     }
 
     private void cameraIntent() {
+        final Button button_click;
         final CameraPreview cameraPreview = new CameraPreview(this);
         ((FrameLayout) findViewById(R.id.preview)).addView(cameraPreview);
 
-        Button buttonClick = (Button) findViewById(R.id.buttonClick);
-        buttonClick.setOnClickListener( new View.OnClickListener() {
+        button_click = findViewById(R.id.buttonClick);
+        button_click.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
+                button_click.setEnabled(false);
+                button_click.setText("Processing Image...");
                 cameraPreview.camera.takePicture(shutterCallback, rawCallback, jpegCallback);
             }
         });
