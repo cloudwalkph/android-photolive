@@ -1,0 +1,9 @@
+<resources>
+    <string name="start">Start</string>
+    <string name="welcome">Welcome to Cerelac Photolive</string>
+    <string name="photo">Noel Button</string>
+    <string name="combinedImageView">container of image</string>
+    <string name="bulilitName">Bulilit\'s Name</string>
+    <string name="submitName">Submit</string>
+    <string name="snap">Show me your big smile then press me</string>
+</resources>
